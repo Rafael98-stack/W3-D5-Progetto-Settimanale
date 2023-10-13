@@ -362,13 +362,22 @@ const myFunc4 = () => {
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 const myFunc5 = () => {
-  const allList = document.getElementsByTagName("li")
-  allList.id
+  const Ul = document.createElement("ul")
+  Ul.innerText = "Sono una Lista"
+  Ul.setAttribute("id", "myList")
+  const body = document.querySelectorAll("body")
+  body.appendChild(Ul)
 }
+myFunc5();
+console.log(myFunc5)
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
-
+const myFunc6 = () => {
+  const myId = getElementsByTagName("myList")
+  myId.removeAttribute()
+}
+myFunc6()
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
