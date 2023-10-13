@@ -365,7 +365,7 @@ const myFunc5 = () => {
   const Ul = document.createElement("ul")
   Ul.innerText = "Sono una Lista"
   Ul.setAttribute("id", "myList")
-  const body = document.querySelectorAll("body")
+  const body = document.querySelectorAll("body")[0]
   body.appendChild(Ul)
 }
 myFunc5();
